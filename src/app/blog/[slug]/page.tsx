@@ -13,6 +13,14 @@ interface BlogPost {
   content: string[];
 }
 
+export function generateStaticParams() {
+  return [
+    { slug: 'how-to-register-company-oman' },
+    { slug: 'investor-visa-guide-oman' },
+    { slug: 'business-setup-cost-oman' },
+  ];
+}
+
 const posts: Record<string, BlogPost> = {
   "how-to-register-company-oman": {
     slug: "how-to-register-company-oman",
