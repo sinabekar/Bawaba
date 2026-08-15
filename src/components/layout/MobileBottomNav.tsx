@@ -4,28 +4,34 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Home, Building2, Stamp, MessageCircle, BookOpen } from "lucide-react";
-
-const navItems = [
-  { href: "/", label: "Home", icon: Home },
-  { href: "/company-registration", label: "Register", icon: Building2 },
-  { href: "/visa-services", label: "Visas", icon: Stamp },
-  { href: "/blog", label: "Blog", icon: BookOpen },
-  {
-    href: "https://wa.me/96890000000",
-    label: "WhatsApp",
-    icon: MessageCircle,
-    external: true,
-    highlight: true,
-  },
-];
+import { useLocale, useTranslations } from "next-intl";
+import { localeHref, type Locale } from "@/i18n/routing";
+import { whatsappLink } from "@/lib/whatsapp";
 
 export default function MobileBottomNav() {
   const pathname = usePathname();
+  const locale = useLocale() as Locale;
+  const t = useTranslations("MobileBottomNav");
+  const tw = useTranslations("WhatsApp");
+  const lh = (path: string) => localeHref(locale, path);
+
+  const navItems = [
+    { href: lh("/"), label: t("home"), icon: Home },
+    { href: lh("/company-registration"), label: t("register"), icon: Building2 },
+    { href: lh("/visa-services"), label: t("visas"), icon: Stamp },
+    { href: lh("/blog"), label: t("blog"), icon: BookOpen },
+    {
+      href: whatsappLink(tw("messages.general")),
+      label: t("whatsapp"),
+      icon: MessageCircle,
+      external: true,
+    },
+  ];
 
   return (
     <nav
-      className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-100 mobile-bottom-safe"
-      aria-label="Mobile navigation"
+      className="md:hidden fixed bottom-0 start-0 end-0 z-40 bg-white border-t border-gray-100 mobile-bottom-safe"
+      aria-label={t("navLabel")}
     >
       <div className="flex items-center justify-around h-16 px-2">
         {navItems.map((item) => {

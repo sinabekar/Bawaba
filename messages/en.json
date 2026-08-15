@@ -1,0 +1,719 @@
+{
+  "Brand": {
+    "name": "Dorbrij",
+    "meaning": "Door + Bridge"
+  },
+  "Nav": {
+    "homeAriaLabel": "Dorbrij home",
+    "services": "Services",
+    "servicesItems": {
+      "companyRegistration": "Company Registration",
+      "visaServices": "Visa Services",
+      "whyOman": "Why Invest in Oman"
+    },
+    "whyOman": "Why Oman",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact",
+    "whatsappCta": "Chat on WhatsApp",
+    "toggleMenu": "Toggle mobile menu",
+    "close": "Close"
+  },
+  "MobileBottomNav": {
+    "navLabel": "Mobile navigation",
+    "home": "Home",
+    "register": "Register",
+    "visas": "Visas",
+    "blog": "Blog",
+    "whatsapp": "WhatsApp"
+  },
+  "Footer": {
+    "newsletterTitle": "Stay informed about business in Oman",
+    "newsletterSubtitle": "Get the latest insights, regulatory updates, and investment opportunities.",
+    "tagline": "Door + Bridge. We help international entrepreneurs, investors, and companies establish and grow their presence in Oman.",
+    "companyHeading": "Company",
+    "servicesHeading": "Services",
+    "resourcesHeading": "Resources",
+    "companyLinks": {
+      "about": "About Us",
+      "team": "Our Team",
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "servicesLinks": {
+      "registration": "Company Registration",
+      "investor": "Investor Visa",
+      "employment": "Employment Visa",
+      "family": "Family Visa",
+      "consultation": "Business Consultation"
+    },
+    "resourcesLinks": {
+      "blog": "Blog",
+      "whyOman": "Why Invest in Oman",
+      "guide": "Business Setup Guide",
+      "visaRequirements": "Visa Requirements",
+      "whatsapp": "Chat on WhatsApp"
+    },
+    "legalLinks": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
+    },
+    "address": "Muscat, Oman",
+    "rights": "© {year} Dorbrij. All rights reserved."
+  },
+  "WhatsApp": {
+    "widgetTitle": "Chat with us",
+    "widgetSubtitle": "Get instant answers about business setup in Oman",
+    "startChat": "Start Chat",
+    "close": "Close",
+    "messages": {
+      "general": "Hi, I'm interested in setting up a business in Oman.",
+      "consultation": "Hi, I'd like to book a free consultation about business setup in Oman.",
+      "companyRegistration": "Hi, I'd like to register a company in Oman.",
+      "visaServices": "Hi, I'd like to know more about visa services in Oman.",
+      "investorVisa": "Hi, I'd like to apply for an Investor Visa in Oman.",
+      "employmentVisa": "Hi, I'd like to apply for an Employment Visa in Oman.",
+      "familyVisa": "Hi, I'd like to apply for a Family Visa in Oman.",
+      "contactPage": "Hi, I'd like to know more about business setup in Oman."
+    }
+  },
+  "FloatingCTA": {
+    "label": "Chat on WhatsApp"
+  },
+  "ExitIntent": {
+    "title": "Wait — Get Your Free Guide",
+    "description": "Download our complete \"Starting a Business in Oman\" guide — covering registration, visas, costs, and everything you need to know.",
+    "emailLabel": "Email address",
+    "placeholder": "Enter your email address",
+    "submit": "Send Me the Free Guide",
+    "dismiss": "No thanks, I don't need this",
+    "close": "Close"
+  },
+  "NewsletterForm": {
+    "emailLabel": "Email address",
+    "placeholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "subscribed": "You're subscribed! Check your inbox."
+  },
+  "LanguageSwitcher": {
+    "label": "Language"
+  },
+  "Hero": {
+    "badge": "Door + Bridge to Business in Oman",
+    "headlineLine1": "Start Your Business",
+    "headlineLine2": "Journey in",
+    "headlineHighlight": "Oman.",
+    "subtitle": "From company registration and investor visas to complete business setup, Dorbrij helps entrepreneurs and investors establish their presence in Oman with confidence.",
+    "trustBadges": {
+      "consultation": "Free Initial Consultation",
+      "licensed": "Licensed Consultants",
+      "pricing": "Transparent Pricing"
+    },
+    "ctaWhatsapp": "Chat on WhatsApp",
+    "ctaContact": "Book a Free Consultation",
+    "socialProof": "Trusted by 500+ businesses",
+    "stats": {
+      "businesses": "Businesses Registered",
+      "processing": "Avg. Processing Time",
+      "countries": "Countries Served",
+      "satisfaction": "Client Satisfaction"
+    },
+    "illustration": {
+      "companyStatus": "Company Status",
+      "registrationActive": "Registration Active",
+      "active": "Active",
+      "step1": "Business Activity Approved",
+      "step2": "Company Registration (CR)",
+      "step3": "Investor Visa Processing",
+      "step4": "Bank Account Setup",
+      "estimatedCompletion": "Estimated completion",
+      "businessDays": "7 business days",
+      "successRate": "Success Rate",
+      "newThisMonth": "New this month",
+      "newBusinesses": "47 businesses"
+    }
+  },
+  "TrustSection": {
+    "trustedBy": "Trusted by clients from across the globe",
+    "items": [
+      { "title": "Professional Consultants", "description": "Licensed business experts with deep knowledge of Oman's regulatory environment." },
+      { "title": "Fast Processing", "description": "Average company registration completed in 5–7 business days." },
+      { "title": "Transparent Process", "description": "No hidden fees. Full visibility into every step of your application." },
+      { "title": "Dedicated Support", "description": "A personal advisor guides you from day one through launch." },
+      { "title": "Business Experts", "description": "Specialists in company formation, visas, and Oman's free zones." },
+      { "title": "High Client Satisfaction", "description": "98% of clients rate us Excellent. We don't stop until you're set up." }
+    ]
+  },
+  "ServicesSection": {
+    "badge": "Our Services",
+    "title": "Everything you need to",
+    "titleHighlight": " start and grow",
+    "description": "From company registration to visa processing, we provide end-to-end support for every stage of your Oman business journey.",
+    "services": [
+      { "title": "Company Registration", "description": "Full-service company formation in Oman. We handle everything from business activity selection to CR issuance.", "badge": "Most Popular" },
+      { "title": "Investor Visa", "description": "Secure your investor visa to live and operate your business in Oman without restrictions.", "badge": "" },
+      { "title": "Employment Visa", "description": "Bring skilled professionals to your Oman business with proper employment visa processing.", "badge": "" },
+      { "title": "Family Visa", "description": "Reunite your family in Oman. We process family residence visas quickly and smoothly.", "badge": "" },
+      { "title": "Business Consultation", "description": "Expert guidance on business structures, regulations, free zones, and investment opportunities in Oman.", "badge": "" },
+      { "title": "Coming Soon", "description": "PRO services, accounting, trademark registration, bank account opening, and investment advisory — expanding soon.", "badge": "Coming Soon" }
+    ],
+    "notSure": "Not sure which service you need?",
+    "cta": "Chat on WhatsApp",
+    "learnMore": "Learn More"
+  },
+  "WhyOmanSection": {
+    "badge": "Why Oman",
+    "title": "The smart destination for",
+    "titleHighlight": " ambitious businesses",
+    "description": "Oman offers a unique combination of stability, strategic location, and business-friendly policies that make it one of the best places to establish a company in the region.",
+    "stats": [
+      { "value": "0%", "label": "Corporate Tax Rate*", "note": "for most businesses" },
+      { "value": "100%", "label": "Foreign Ownership", "note": "in most sectors" },
+      { "value": "4+", "label": "Free Zones", "note": "with special benefits" },
+      { "value": "#42", "label": "Ease of Doing Business", "note": "World Bank Ranking" }
+    ],
+    "reasons": [
+      { "value": "At the Crossroads", "title": "Strategic Location", "description": "Oman sits at the intersection of Asia, Africa, and Europe, providing unparalleled access to global trade routes." },
+      { "value": "GDP $105B+", "title": "Stable Economy", "description": "One of the most stable economies in the Middle East, backed by oil revenues, tourism, and growing sectors." },
+      { "value": "100% Ownership", "title": "Business Friendly", "description": "Foreign investors can hold 100% ownership in most sectors, with streamlined regulations for new businesses." },
+      { "value": "Vision 2040", "title": "Growing Market", "description": "Oman's Vision 2040 plan is driving massive diversification and investment across key sectors." },
+      { "value": "4+ Free Zones", "title": "Free Zones", "description": "Special economic zones offer zero taxes, 100% repatriation of capital, and simplified import/export rules." },
+      { "value": "Pro-Investment", "title": "Government Support", "description": "Active government incentives, streamlined licensing, and dedicated investment authorities support growth." }
+    ],
+    "disclaimer": "*Tax rates vary by sector and free zone. Consult our advisors for your specific situation."
+  },
+  "HowItWorks": {
+    "badge": "How It Works",
+    "title": "Six steps to your",
+    "titleHighlight": " Oman business",
+    "description": "Our streamlined process gets your company up and running as fast as possible — with expert support at every step.",
+    "steps": [
+      { "title": "Book Consultation", "description": "Message us on WhatsApp for a free 30-minute call with our business setup advisor to discuss your goals and requirements." },
+      { "title": "Choose Business Activity", "description": "We help you select the optimal business activity and legal structure for your company in Oman." },
+      { "title": "Prepare Documents", "description": "Our team provides a personalized document checklist and assists with preparation and attestation." },
+      { "title": "Company Registration", "description": "We submit your application and handle all government interactions until your CR is issued." },
+      { "title": "Visa Processing", "description": "Obtain your investor, employment, or family visas through our streamlined process." },
+      { "title": "Start Your Business", "description": "Your company is live. We continue supporting you with PRO services, banking, and ongoing compliance." }
+    ],
+    "ctaTitle": "Start Your Journey Today",
+    "ctaSubtitle": "Free consultation. No commitment required."
+  },
+  "AIFeatures": {
+    "badge": "AI-Powered Tools",
+    "title": "Smarter business setup,",
+    "titleHighlight": "powered by AI",
+    "description": "We're building intelligent tools to make business setup in Oman faster, cheaper, and more transparent than ever before.",
+    "tools": [
+      { "title": "Business Setup Advisor", "description": "AI-powered recommendations for the best business structure, activity, and location based on your goals.", "status": "Coming Soon" },
+      { "title": "Visa Eligibility Checker", "description": "Instantly determine which visa category you qualify for based on your investment and nationality.", "status": "Coming Soon" },
+      { "title": "Company Cost Calculator", "description": "Get an instant estimate of total setup costs — registration fees, visa costs, office requirements, and more.", "status": "Coming Soon" },
+      { "title": "Documents Generator", "description": "Automatically generate a personalized document checklist for your specific business type and nationality.", "status": "Coming Soon" },
+      { "title": "AI Chat Assistant", "description": "24/7 intelligent assistant to answer your questions about Oman business regulations, visas, and processes.", "status": "Coming Soon" },
+      { "title": "Investment Analyzer", "description": "Analyze investment opportunities, free zones, and industry trends to find the best opportunity for you.", "status": "Coming Soon" }
+    ],
+    "earlyAccessText": "Be the first to access our AI tools —",
+    "earlyAccessLink": "join our early access list"
+  },
+  "Testimonials": {
+    "badge": "Testimonials",
+    "title": "Trusted by businesses",
+    "titleHighlight": " worldwide",
+    "description": "Join hundreds of entrepreneurs and investors who have established their Oman business with Dorbrij.",
+    "items": [
+      { "quote": "Dorbrij made our Oman expansion effortless. From company registration to investor visas, everything was handled professionally and faster than we expected.", "name": "Ahmed Al-Rashidi", "role": "CEO", "company": "Al-Rashidi Trading LLC", "country": "UAE", "initials": "AR" },
+      { "quote": "I was nervous about setting up a business in a new country, but Dorbrij's team guided me through every step. The process was transparent and incredibly smooth.", "name": "Sarah Chen", "role": "Founder", "company": "SC Design Studio", "country": "United Kingdom", "initials": "SC" },
+      { "quote": "As an Indian entrepreneur, I needed experts who understood Oman's regulations. Dorbrij exceeded all expectations. Highly recommend to anyone expanding to Oman.", "name": "Priya Nair", "role": "Director", "company": "InnoTech Solutions", "country": "India", "initials": "PN" },
+      { "quote": "The family visa process was handled seamlessly. We relocated to Oman within 3 weeks of starting the process. Dorbrij delivered on every promise.", "name": "Mohammed Al-Balushi", "role": "Operations Manager", "company": "Gulf Logistics Co.", "country": "Oman", "initials": "MB" },
+      { "quote": "Professional, responsive, and genuinely helpful. They saved us weeks of bureaucratic hassle. Dorbrij is the partner every investor in Oman needs.", "name": "David Kowalski", "role": "Investment Manager", "company": "European Capital Group", "country": "Poland", "initials": "DK" },
+      { "quote": "The team at Dorbrij has an exceptional understanding of Oman's business landscape. They helped us identify the right free zone and structure for our tech company.", "name": "Liu Wei", "role": "Co-Founder", "company": "Silk Road Tech", "country": "China", "initials": "LW" }
+    ],
+    "avgRating": "Average Rating",
+    "happyClients": "Happy Clients",
+    "satisfactionRate": "Satisfaction Rate"
+  },
+  "FAQSection": {
+    "badge": "FAQ",
+    "title": "Frequently asked",
+    "titleHighlight": " questions",
+    "description": "Everything you need to know about starting a business in Oman. Can't find the answer? Message us on WhatsApp.",
+    "moreQuestions": "Have more questions? Talk to an expert",
+    "items": [
+      { "category": "Registration", "q": "How long does it take to register a company in Oman?", "a": "On average, company registration takes 5–10 business days depending on the business activity, structure, and completeness of documents. Some expedited options are available for certain business types." },
+      { "category": "Registration", "q": "What types of business structures are available in Oman?", "a": "The most common structures are LLC (Limited Liability Company), sole proprietorship, joint venture, branch office, and representative office. Each has different requirements and benefits. An LLC is most commonly used by foreign investors." },
+      { "category": "Registration", "q": "Can a foreigner own 100% of a company in Oman?", "a": "Yes, in most sectors foreign investors can own up to 100% of their business since Oman implemented the Foreign Capital Investment Law. Certain restricted sectors may still require an Omani partner. Free zones also offer 100% foreign ownership." },
+      { "category": "Costs", "q": "What is the minimum capital required to start a business in Oman?", "a": "Minimum capital requirements vary by business type. For an LLC, the minimum is generally OMR 150,000 (approximately $390,000) for certain categories, but many business activities have lower or no minimum capital requirements. We'll advise based on your specific activity." },
+      { "category": "Costs", "q": "What are the total costs of setting up a business in Oman?", "a": "Total setup costs vary based on business structure, activity, and location. Typically includes government fees (OMR 300–2,000+), professional service fees, office rental, and visa costs. We provide a full cost breakdown during your free consultation." },
+      { "category": "Visas", "q": "What is an investor visa and who qualifies?", "a": "An investor visa (RP2) allows foreign nationals who own or invest in an Oman-registered business to live and work in Oman. Eligibility depends on your investment amount, business activity, and shareholder percentage. Typically requires a registered company and minimum investment threshold." },
+      { "category": "Visas", "q": "How long does the investor visa take?", "a": "Processing times typically range from 2–4 weeks after document submission. Requirements include a registered company, valid passport, medical clearance, and background check. Our team manages the entire process on your behalf." },
+      { "category": "Visas", "q": "Can I bring my family to Oman on a family visa?", "a": "Yes. If you have a valid investor or employment visa, you can sponsor family members (spouse, children, sometimes parents) on a family residence visa. Requirements include proof of relationship, accommodation in Oman, and sufficient income." },
+      { "category": "Visas", "q": "What is the difference between an employment visa and an investor visa?", "a": "An investor visa is for business owners/shareholders. An employment visa is for employees working for an Oman company under an employment contract. Both types allow you to live and work in Oman, but they have different requirements and sponsor types." },
+      { "category": "Free Zones", "q": "What are the free zones in Oman and what are their benefits?", "a": "Oman has several free zones including Sohar Freezone, Salalah Freezone, Knowledge Oasis Muscat (KOM), and Duqm SEZ. Benefits include 0% corporate tax, 100% foreign ownership, full capital repatriation, streamlined customs, and simplified licensing." },
+      { "category": "Requirements", "q": "What documents are required to register a company?", "a": "Typically: passport copies for all shareholders, proof of address, bank reference letter, proposed company name, business plan (sometimes), and trade name reservation certificate. Requirements vary by business type and we provide a personalized checklist." },
+      { "category": "Requirements", "q": "Do I need to be physically present in Oman for company registration?", "a": "Not necessarily. In many cases, we can handle the registration process remotely with properly attested and notarized documents. However, some stages may require in-person presence. We'll clarify what's needed when you message us." },
+      { "category": "Taxes", "q": "Is there corporate tax in Oman?", "a": "Oman currently has a corporate income tax rate of 15% on taxable income above OMR 30,000 for most businesses. However, small businesses with income under OMR 30,000 may be exempt. Free zone companies often enjoy additional tax benefits." },
+      { "category": "Taxes", "q": "Is there personal income tax or VAT in Oman?", "a": "There is no personal income tax in Oman, making it attractive for expatriates. Oman introduced Value Added Tax (VAT) at 5% in 2021. Our accounting partners can advise on VAT registration and compliance for your business." },
+      { "category": "Support", "q": "What ongoing support do you provide after company registration?", "a": "After registration, we offer PRO services (government liaison), visa renewals, business license renewals, accounting, tax compliance, and general business advisory. We're your long-term partner, not just a one-time service." },
+      { "category": "Process", "q": "What is a PRO service and do I need it?", "a": "PRO (Public Relations Officer) services handle ongoing government interactions — visa renewals, license renewals, labor card updates, Ministry submissions, etc. For businesses without a dedicated admin team, it's highly recommended and cost-effective." },
+      { "category": "Process", "q": "Can I change my business activity after registration?", "a": "Yes, but it requires updating your commercial registration (CR), which involves re-approval from the Ministry of Commerce. We can handle this for you. It's best to plan your activities upfront to avoid additional fees." },
+      { "category": "Registration", "q": "What is a Commercial Registration (CR) in Oman?", "a": "A CR (Commercial Registration) is the official business license issued by Oman's Ministry of Commerce, Industry and Investment Promotion. It's the foundational document for operating any business legally in Oman." },
+      { "category": "Process", "q": "How do I open a bank account for my Oman company?", "a": "Corporate bank account opening requires your CR, company Memorandum of Association, shareholder passports, proof of address, and an initial deposit. We connect you with our banking partners to streamline this process." },
+      { "category": "Process", "q": "Do I need a local office address to register a company?", "a": "Yes, all companies in Oman require a registered commercial address. We can assist with office space solutions — from virtual office addresses to serviced offices — depending on your needs and business activity requirements." }
+    ]
+  },
+  "CTASection": {
+    "defaultTitle": "Ready to start your business in Oman?",
+    "defaultSubtitle": "Message us on WhatsApp for a free 30-minute consultation with our experts. No commitment, no sales pressure — just expert guidance.",
+    "whatsapp": "Chat on WhatsApp",
+    "contact": "Contact Us",
+    "footnote": "Free consultation • No obligation • Experts available Monday – Saturday"
+  },
+  "HomePage": {
+    "metaTitle": "Dorbrij — Your Door + Bridge to Business in Oman",
+    "metaDescription": "Start your business in Oman with Dorbrij. We handle company registration, investor visas, employment visas, and complete business setup for international entrepreneurs and investors.",
+    "formBadge": "Free Consultation",
+    "formTitle": "Tell us about your",
+    "formTitleHighlight": "business goals",
+    "formDescription": "Message us on WhatsApp and a Dorbrij expert will reach out within minutes to map out your personalized business setup plan — no forms, no waiting.",
+    "formPoints": [
+      "No obligation or commitment required",
+      "Expert advice tailored to your situation",
+      "Clear timeline and cost breakdown",
+      "Available in English, Farsi, Arabic, Hindi, and more"
+    ],
+    "whatsappCta": "Chat on WhatsApp",
+    "whatsappSubCta": "Usually replies within minutes"
+  },
+  "AboutPage": {
+    "metaTitle": "About Dorbrij",
+    "metaDescription": "Learn about Dorbrij — our mission, vision, values, and the team helping international entrepreneurs establish businesses in Oman.",
+    "heroBadge": "About Dorbrij",
+    "heroTitleLine1": "We're building the door and bridge",
+    "heroTitleHighlight": "every entrepreneur needs.",
+    "heroDescription": "Dorbrij was founded with a simple belief: setting up a business in Oman should be simple, transparent, and accessible for anyone in the world — regardless of where they're from or how much they know about Oman's regulations.",
+    "missionTitle": "Our Mission",
+    "missionDescription": "To make business setup in Oman as simple and transparent as possible — removing every unnecessary barrier for international entrepreneurs and investors who want to establish their presence in this remarkable country.",
+    "visionTitle": "Our Vision",
+    "visionDescription": "To be the leading business gateway platform in Oman — combining expert human consultants with intelligent technology to deliver a world-class experience for every international business looking to grow in the Sultanate.",
+    "storyBadge": "Our Story",
+    "storyTitle": "How Dorbrij began",
+    "storyParagraphs": [
+      "Dorbrij was born from frustration. Our founders — a team of Omani business professionals and international entrepreneurs — experienced firsthand how difficult, opaque, and inconsistent the business setup process in Oman could be.",
+      "Forms were rejected without explanation. Processing times were unpredictable. Advisors charged high fees while delivering confusing, incomplete guidance. International investors were walking away from genuine opportunities simply because they couldn't navigate the bureaucracy.",
+      "We built Dorbrij to fix that. The name combines \"door\" and \"bridge\" — because that's exactly what we are: the door that opens and the bridge that connects ambitious people to their business in Oman. Always open, always leading somewhere.",
+      "Since 2019, we've helped more than 500 businesses register in Oman, processed thousands of visas, and supported entrepreneurs from over 15 countries in building something great here. We're just getting started."
+    ],
+    "valuesBadge": "Our Values",
+    "valuesTitle": "What we stand for",
+    "values": [
+      { "title": "Integrity First", "description": "We operate with complete transparency. No hidden fees, no misleading promises — only honest, straightforward guidance." },
+      { "title": "Client-Centered", "description": "Every decision we make is in the best interest of our clients. Your success is our success." },
+      { "title": "Results-Driven", "description": "We measure ourselves by one thing: getting your business established quickly and correctly, every time." },
+      { "title": "Excellence", "description": "We hold ourselves to the highest professional standards in everything from advice to document handling to communication." },
+      { "title": "Genuine Care", "description": "We genuinely care about our clients' journeys. Many come to us as strangers and leave as long-term partners." },
+      { "title": "Full Transparency", "description": "We keep you informed at every step. You'll always know exactly where your application stands." }
+    ],
+    "teamBadge": "Our Team",
+    "teamTitle": "The people behind Dorbrij",
+    "teamDescription": "A diverse team of Omani nationals and international experts united by a passion for helping others succeed.",
+    "team": [
+      { "name": "Abdullah Al-Balushi", "role": "CEO & Co-Founder", "background": "Former Ministry of Commerce official with 15 years of regulatory experience." },
+      { "name": "Priya Sharma", "role": "Head of Business Setup", "background": "MBA from London Business School. Specialist in GCC company formation and FDI." },
+      { "name": "Omar Al-Rashidi", "role": "PRO & Visa Director", "background": "10+ years handling visa and immigration cases for multinational companies in Oman." },
+      { "name": "Li Wei", "role": "International Relations", "background": "Specialist in supporting Chinese and Asian investors entering the Oman market." }
+    ],
+    "journeyBadge": "Our Journey",
+    "journeyTitle": "Milestones that matter",
+    "milestones": [
+      { "year": "2019", "title": "Dorbrij Founded", "desc": "Started with a mission to simplify business setup in Oman for international investors." },
+      { "year": "2020", "title": "100th Client", "desc": "Served our 100th business client despite global challenges. Proved our model works." },
+      { "year": "2021", "title": "Visa Division Launch", "desc": "Expanded to full PRO and visa services to provide end-to-end support." },
+      { "year": "2022", "title": "500 Businesses Registered", "desc": "Milestone of 500 company registrations from clients across 15+ countries." },
+      { "year": "2024", "title": "Digital Platform Launch", "desc": "Launched our online portal for document tracking and application status updates." },
+      { "year": "2025", "title": "AI Tools in Development", "desc": "Building AI-powered tools to make business setup faster and smarter." }
+    ],
+    "ctaTitle": "Join 500+ businesses that chose Dorbrij",
+    "ctaSubtitle": "Let our experienced team guide you to a successful business setup in Oman."
+  },
+  "ContactPage": {
+    "metaTitle": "Contact Dorbrij",
+    "metaDescription": "Get in touch with Dorbrij's business setup experts on WhatsApp, by phone, or by email. We respond within 24 hours.",
+    "heroBadge": "Message Us Anytime",
+    "heroTitleLine1": "Let's talk about",
+    "heroTitleHighlight": "your business goals",
+    "heroDescription": "Whether you're ready to start or just exploring your options, our team is here to answer your questions with zero pressure — fastest on WhatsApp.",
+    "methods": [
+      { "label": "WhatsApp", "value": "Chat Instantly", "description": "Fastest response channel" },
+      { "label": "Phone", "value": "+968 9000 0000", "description": "Mon–Sat, 8am–6pm Oman time" },
+      { "label": "Email", "value": "hello@dorbrij.om", "description": "We reply within 24 hours" },
+      { "label": "Office", "value": "Muscat, Oman", "description": "Visit us by appointment" }
+    ],
+    "officeHoursTitle": "Office Hours",
+    "officeHours": [
+      { "day": "Monday – Thursday", "hours": "8:00 AM – 6:00 PM" },
+      { "day": "Friday", "hours": "8:00 AM – 12:00 PM" },
+      { "day": "Saturday", "hours": "9:00 AM – 3:00 PM" },
+      { "day": "Sunday", "hours": "Closed" }
+    ],
+    "whatsappTitle": "WhatsApp — Fastest Way to Reach Us",
+    "whatsappDescription": "Send us a message and we'll typically respond within minutes. No forms, no waiting — just a real conversation.",
+    "whatsappCta": "Open WhatsApp",
+    "mapPlaceholderTitle": "Muscat, Oman",
+    "mapPlaceholderSubtitle": "Interactive map coming soon"
+  },
+  "CompanyRegistrationPage": {
+    "metaTitle": "Company Registration in Oman",
+    "metaDescription": "Register your company in Oman with expert guidance. We handle LLC formation, CR issuance, business activity selection, and all government interactions. Fast, transparent, affordable.",
+    "heroBadge": "Company Registration",
+    "heroTitleLine1": "Register Your Company",
+    "heroTitleHighlight": "in Oman Today",
+    "heroDescription": "We handle everything — from business activity selection and document preparation to Commercial Registration (CR) issuance. Fast, transparent, and stress-free.",
+    "ctaStart": "Chat on WhatsApp",
+    "ctaAsk": "Ask a Question",
+    "benefitsBadge": "Why Register in Oman",
+    "benefitsTitle": "The benefits of an Oman-registered company",
+    "benefits": [
+      { "title": "100% Foreign Ownership", "description": "Own your business outright in most sectors — no need for a local partner." },
+      { "title": "Limited Liability", "description": "Protect your personal assets — your liability is limited to your capital investment." },
+      { "title": "Tax Advantages", "description": "0% personal income tax and competitive corporate tax rates compared to Western markets." },
+      { "title": "Formal Business Presence", "description": "A registered company gives you credibility to sign contracts, hire staff, and open bank accounts." }
+    ],
+    "structuresBadge": "Business Structures",
+    "structuresTitle": "Choose the right structure for your business",
+    "structuresDescription": "Not sure which structure is best? Message us on WhatsApp and our advisors will guide you to the optimal choice based on your activity, ownership, and goals.",
+    "structures": [
+      { "name": "Limited Liability Company (LLC)", "description": "The most popular structure for foreign investors. Offers limited liability, flexible management, and can be 100% foreign-owned in most sectors.", "bestFor": "Trading, services, general business", "minCapital": "OMR 150,000 (some activities)", "timeline": "5–10 days", "recommended": true },
+      { "name": "Sole Proprietorship", "description": "Simplest form of business, owned by one individual. Best for small businesses and freelancers. Full personal liability.", "bestFor": "Small businesses, consultants", "minCapital": "Varies", "timeline": "3–5 days", "recommended": false },
+      { "name": "Branch Office", "description": "Extension of a foreign parent company in Oman. Allows operations without forming a separate legal entity. Requires a local agent.", "bestFor": "Established foreign companies", "minCapital": "No minimum", "timeline": "10–15 days", "recommended": false },
+      { "name": "Free Zone Company", "description": "Set up in one of Oman's free zones (Sohar, Salalah, Duqm, KOM) for maximum tax benefits and simplified regulations.", "bestFor": "Manufacturing, logistics, tech", "minCapital": "Varies by zone", "timeline": "7–14 days", "recommended": false }
+    ],
+    "recommendedLabel": "Recommended",
+    "bestForLabel": "Best for",
+    "minCapitalLabel": "Min. capital",
+    "timelineLabel": "Timeline",
+    "documentsBadge": "Required Documents",
+    "documentsTitle": "What you'll need to provide",
+    "documentsDescription": "We'll give you a personalized checklist the moment you message us. Here's what's typically required:",
+    "documents": [
+      "Passport copies of all shareholders and directors",
+      "Proof of address (utility bill or bank statement)",
+      "Bank reference letter (from home country)",
+      "Proposed company name (3 options recommended)",
+      "Business activity description",
+      "Memorandum & Articles of Association (drafted by us)",
+      "Power of Attorney (if applying remotely)",
+      "No Objection Certificate (if required by nationality)"
+    ],
+    "processBadge": "Registration Process",
+    "processTitle": "How we get your company registered",
+    "process": [
+      { "title": "Name Reservation", "time": "1–2 days", "desc": "We reserve your chosen company name with the Ministry of Commerce." },
+      { "title": "Document Preparation", "time": "2–3 days", "desc": "We prepare and review all required documentation with you." },
+      { "title": "Ministry Submission", "time": "1 day", "desc": "Documents submitted to Oman's Ministry of Commerce." },
+      { "title": "CR Issuance", "time": "3–7 days", "desc": "Commercial Registration (CR) certificate issued." },
+      { "title": "Post-Registration", "time": "3–5 days", "desc": "Tax registration, labor cards, and additional permits secured." }
+    ],
+    "formBadge": "Get Started",
+    "formTitle": "Register your company today",
+    "formDescription": "Message us on WhatsApp and a business setup expert will get back to you within minutes.",
+    "whatsappCta": "Chat on WhatsApp",
+    "ctaTitle": "Ready to register your Oman company?",
+    "ctaSubtitle": "Let our experts handle everything while you focus on your business."
+  },
+  "VisaServicesPage": {
+    "metaTitle": "Visa Services in Oman",
+    "metaDescription": "Investor visa, employment visa, and family visa services in Oman. Expert processing, fast turnaround, transparent fees. Message us on WhatsApp today.",
+    "heroBadge": "Visa Services",
+    "heroTitleLine1": "Oman Visa Services.",
+    "heroTitleHighlight": "Done Right.",
+    "heroDescription": "Investor visas, employment visas, and family visas — processed correctly and efficiently by our licensed PRO team. No surprises, no delays.",
+    "ctaExplore": "Explore Visas",
+    "ctaAsk": "Ask a Question",
+    "quickStats": [
+      { "label": "Avg. processing time", "value": "2–4 weeks" },
+      { "label": "Success rate", "value": "99%+" },
+      { "label": "Visa types offered", "value": "3" }
+    ],
+    "visaTypes": [
+      {
+        "id": "investor",
+        "title": "Investor Visa (RP2)",
+        "description": "For foreign nationals who own or invest in an Oman-registered company. Allows you to live and operate your business in Oman with full legal status.",
+        "eligibility": [
+          "Active shareholder in an Oman-registered company",
+          "Valid passport with 6+ months validity",
+          "Clean background check",
+          "Medical clearance certificate",
+          "Minimum investment threshold met"
+        ],
+        "documents": [
+          "Company Commercial Registration (CR)",
+          "Shareholder certificate",
+          "Valid passport copy",
+          "Medical examination results",
+          "Police clearance certificate",
+          "Passport-size photographs"
+        ],
+        "timeline": "2–4 weeks",
+        "validity": "2 years (renewable)",
+        "whatsappKey": "investorVisa",
+        "applyLabel": "Apply for Investor Visa"
+      },
+      {
+        "id": "employment",
+        "title": "Employment Visa",
+        "description": "For professionals joining an Oman-based employer. Enables foreign nationals to work legally in Oman under an employment contract.",
+        "eligibility": [
+          "Signed employment contract with Oman-registered company",
+          "Employer has valid labor quota",
+          "Valid educational qualifications (for some roles)",
+          "Valid passport",
+          "Medical clearance"
+        ],
+        "documents": [
+          "Employment offer letter",
+          "Passport copy",
+          "Educational certificates (attested)",
+          "Medical examination results",
+          "Police clearance certificate",
+          "Employer's labor card"
+        ],
+        "timeline": "2–3 weeks",
+        "validity": "2 years (renewable)",
+        "whatsappKey": "employmentVisa",
+        "applyLabel": "Apply for Employment Visa"
+      },
+      {
+        "id": "family",
+        "title": "Family Residence Visa",
+        "description": "Reunite your family in Oman. Sponsor your spouse, children, and eligible dependents under your investor or employment residence permit.",
+        "eligibility": [
+          "Sponsor holds valid investor or employment visa",
+          "Minimum monthly income of OMR 300+",
+          "Suitable accommodation in Oman",
+          "Proof of family relationship (marriage/birth certificates)"
+        ],
+        "documents": [
+          "Sponsor's residence card (RP)",
+          "Marriage certificate (attested for spouse)",
+          "Birth certificates (attested for children)",
+          "Accommodation lease agreement",
+          "Salary certificate",
+          "Passport copies of all family members"
+        ],
+        "timeline": "2–3 weeks",
+        "validity": "Matches sponsor's visa",
+        "whatsappKey": "familyVisa",
+        "applyLabel": "Apply for Family Visa"
+      }
+    ],
+    "processingLabel": "Processing:",
+    "validityLabel": "Validity:",
+    "eligibilityHeading": "Eligibility Requirements",
+    "documentsHeading": "Required Documents",
+    "formBadge": "Apply Now",
+    "formTitle": "Start your visa application",
+    "formDescription": "Message us on WhatsApp with your visa requirements and our PRO team will handle the rest.",
+    "whatsappCta": "Chat on WhatsApp",
+    "ctaTitle": "Need help with your Oman visa?",
+    "ctaSubtitle": "Our PRO team has processed thousands of visas. We know exactly what it takes."
+  },
+  "WhyOmanPage": {
+    "metaTitle": "Why Invest in Oman",
+    "metaDescription": "Discover why Oman is one of the best destinations for business and investment. 100% foreign ownership, strategic location, stable economy, free zones, and government support.",
+    "heroBadge": "Why Invest in Oman",
+    "heroTitleLine1": "Oman: The Smart",
+    "heroTitleHighlight": "Business Destination",
+    "heroDescription": "Stable, strategic, and business-friendly — Oman is one of the most underrated investment destinations in the world. Here's why the most ambitious investors are choosing Oman.",
+    "keyFacts": [
+      { "value": "0%", "label": "Personal Income Tax" },
+      { "value": "15%", "label": "Max Corporate Tax" },
+      { "value": "#42", "label": "Ease of Doing Business" },
+      { "value": "$105B+", "label": "GDP (2023)" },
+      { "value": "100%", "label": "Foreign Ownership (most sectors)" },
+      { "value": "4.5M+", "label": "Population & Growing" }
+    ],
+    "advantagesBadge": "Competitive Advantages",
+    "advantagesTitle": "Why savvy investors choose Oman",
+    "advantages": [
+      { "title": "Strategic Geographic Location", "description": "Oman sits at the crossroads of Asia, Africa, Europe, and the Indian subcontinent. With access to the Indian Ocean, Gulf of Oman, and major shipping lanes, Oman is a natural hub for global trade. The Port of Sohar and Port of Salalah are among the region's most modern logistics hubs." },
+      { "title": "Political Stability & Safety", "description": "Oman has maintained remarkable political stability for decades. The country is consistently ranked as one of the safest in the world, with an extremely low crime rate and a neutral foreign policy that enables strong international business relationships." },
+      { "title": "Business-Friendly Regulations", "description": "The 2019 Foreign Capital Investment Law enables 100% foreign ownership across most sectors. Oman has streamlined company registration, simplified visa processes, and established dedicated investment authorities to support foreign investors." },
+      { "title": "Vision 2040 — Massive Investment in Diversification", "description": "Oman's Vision 2040 is driving a historic diversification of the economy. The government is investing billions into tourism, manufacturing, logistics, technology, mining, and renewable energy — creating significant opportunities for early investors." },
+      { "title": "Free Zones with Maximum Benefits", "description": "Oman's free zones — including Sohar Freezone, Salalah Free Zone, Knowledge Oasis Muscat, and Duqm Special Economic Zone — offer zero corporate tax, 100% repatriation of capital, duty-free import/export, and simplified regulations." },
+      { "title": "Tax-Advantaged Environment", "description": "There is no personal income tax in Oman for residents. Corporate tax is 15% (below many other Gulf states), with significant exemptions for small businesses and free zone entities. VAT stands at just 5%." }
+    ],
+    "freeZonesBadge": "Free Zones",
+    "freeZonesTitle": "Oman's world-class free zones",
+    "freeZonesDescription": "Set up in one of Oman's free economic zones for maximum tax benefits, simplified regulations, and strategic logistics access.",
+    "freeZones": [
+      { "name": "Sohar Freezone", "focus": "Manufacturing, Logistics, Industrial", "location": "Sohar, Al Batinah", "highlights": ["0% corporate tax", "Port access", "1M+ m² of land"] },
+      { "name": "Salalah Freezone", "focus": "Logistics, Manufacturing, Trade", "location": "Salalah, Dhofar", "highlights": ["Port of Salalah", "Global shipping hub", "Full repatriation"] },
+      { "name": "Knowledge Oasis Muscat", "focus": "Technology, Knowledge Industries", "location": "Muscat", "highlights": ["Tech focus", "Academic partnerships", "Government support"] },
+      { "name": "Duqm SEZ", "focus": "Petrochemicals, Heavy Industry, Tourism", "location": "Duqm, Al Wusta", "highlights": ["Largest in region", "Deep-sea port", "Fully integrated city"] }
+    ],
+    "opportunitiesBadge": "Opportunities",
+    "opportunitiesTitle": "High-growth sectors in Oman",
+    "opportunitiesDescription": "Identify the right opportunity for your investment. These sectors are seeing the most growth under Oman's Vision 2040 economic plan.",
+    "tableSector": "Sector",
+    "tableGrowth": "Growth Potential",
+    "tableDrivers": "Key Drivers",
+    "opportunities": [
+      { "sector": "Tourism & Hospitality", "growth": "High", "level": "high", "reason": "World-class natural beauty, government investment" },
+      { "sector": "Technology & IT", "growth": "Very High", "level": "very-high", "reason": "Vision 2040 digital economy focus" },
+      { "sector": "Logistics & Freight", "growth": "High", "level": "high", "reason": "Strategic ports, new infrastructure" },
+      { "sector": "Food & Beverage", "growth": "Medium-High", "level": "medium", "reason": "Growing middle class, import dependency" },
+      { "sector": "Healthcare", "growth": "High", "level": "high", "reason": "Underserved market, government investment" },
+      { "sector": "Manufacturing", "growth": "Medium-High", "level": "medium", "reason": "Industrial zones, export potential" },
+      { "sector": "Renewable Energy", "growth": "Very High", "level": "very-high", "reason": "Vision 2040 sustainability targets" },
+      { "sector": "Education", "growth": "Medium-High", "level": "medium", "reason": "Growing population, quality demand" }
+    ],
+    "exploreCta": "Explore Your Investment Opportunity",
+    "ctaTitle": "Ready to invest in Oman?",
+    "ctaSubtitle": "Message us on WhatsApp to explore the best opportunities for your goals."
+  },
+  "BlogPage": {
+    "metaTitle": "Blog — Business Setup in Oman",
+    "metaDescription": "Expert guides, insights, and news about business setup, company registration, visa services, and investment opportunities in Oman.",
+    "heroTitle": "Business in Oman —",
+    "heroTitleHighlight": " the insider view",
+    "heroDescription": "Expert guides, practical insights, and the latest news on company setup, visas, and investment in Oman.",
+    "categories": ["All", "Company Registration", "Visa Guide", "Investment", "Tax & Accounting", "Free Zones"],
+    "featuredLabel": "Featured",
+    "newsletterTitle": "Get the latest Oman business insights",
+    "newsletterDescription": "Join 3,000+ investors and entrepreneurs getting our weekly newsletter.",
+    "posts": [
+      { "slug": "how-to-register-company-oman", "category": "Company Registration", "title": "How to Register a Company in Oman: Complete Guide 2024", "excerpt": "A step-by-step guide to company registration in Oman — covering business structures, required documents, timelines, costs, and insider tips to avoid common mistakes.", "readTime": "12 min read", "date": "December 15, 2024", "featured": true },
+      { "slug": "investor-visa-guide-oman", "category": "Visa Guide", "title": "Investor Visa in Oman: Complete Guide for Foreign Investors", "excerpt": "Everything you need to know about obtaining an investor visa in Oman — eligibility, documents, processing time, costs, and the renewal process.", "readTime": "8 min read", "date": "December 10, 2024", "featured": false },
+      { "slug": "business-setup-cost-oman", "category": "Company Registration", "title": "True Cost of Business Setup in Oman in 2024", "excerpt": "A transparent, complete breakdown of all costs involved in setting up a business in Oman — government fees, professional services, visas, office costs, and more.", "readTime": "10 min read", "date": "December 5, 2024", "featured": false },
+      { "slug": "best-industries-oman-2024", "category": "Investment", "title": "Best Industries to Invest in Oman Right Now", "excerpt": "Oman's Vision 2040 is reshaping the economy. These are the sectors experiencing the highest growth and offering the best returns for investors in 2024.", "readTime": "9 min read", "date": "November 28, 2024", "featured": false },
+      { "slug": "tax-guide-oman", "category": "Tax & Accounting", "title": "Complete Tax Guide for Businesses in Oman", "excerpt": "Corporate tax, VAT, withholding tax, and everything else you need to know about taxation in Oman — explained in plain language for business owners.", "readTime": "11 min read", "date": "November 20, 2024", "featured": false },
+      { "slug": "oman-free-zones-guide", "category": "Free Zones", "title": "Oman Free Zones: Which One is Right for Your Business?", "excerpt": "A detailed comparison of Sohar Freezone, Salalah Free Zone, Knowledge Oasis Muscat, and Duqm SEZ — locations, benefits, costs, and who should choose each one.", "readTime": "14 min read", "date": "November 12, 2024", "featured": false },
+      { "slug": "employment-visa-oman", "category": "Visa Guide", "title": "Employment Visa in Oman: Everything You Need to Know", "excerpt": "How to obtain an employment visa in Oman for your staff. Covers eligibility, sponsorship, documents, processing, and labor law essentials.", "readTime": "7 min read", "date": "November 5, 2024", "featured": false },
+      { "slug": "family-visa-oman", "category": "Visa Guide", "title": "Family Residence Visa in Oman: A Practical Guide", "excerpt": "How to sponsor your family to join you in Oman. Eligibility, documents, income requirements, processing time, and practical tips.", "readTime": "6 min read", "date": "October 28, 2024", "featured": false }
+    ]
+  },
+  "BlogPostPage": {
+    "backToBlog": "Back to Blog",
+    "share": "Share",
+    "tocTitle": "Table of Contents",
+    "tableOfContents": [
+      "Understanding Oman's Business Environment",
+      "Choosing the Right Business Structure",
+      "Step-by-Step Registration Process",
+      "Required Documents Checklist",
+      "Costs and Government Fees",
+      "Common Mistakes to Avoid",
+      "Next Steps After Registration"
+    ],
+    "bookFreeConsultation": "Chat on WhatsApp",
+    "checklistTitle": "Complete Business Setup Checklist",
+    "checkpoints": [
+      "Choose your business activity and legal structure",
+      "Reserve your company name (1–2 days)",
+      "Prepare and attest all required documents",
+      "Submit application to Ministry of Commerce",
+      "Receive Commercial Registration (CR) certificate",
+      "Register for tax (if applicable)",
+      "Obtain additional permits for your activity",
+      "Open corporate bank account",
+      "Apply for investor/employee visas",
+      "Launch your business"
+    ],
+    "keyTakeawaysTitle": "Key Takeaways",
+    "takeaways": [
+      "Foreign investors can own 100% of a company in most sectors in Oman.",
+      "An LLC is the most common and recommended structure for foreign investors.",
+      "Registration typically takes 5–10 business days with proper documentation.",
+      "Free zones offer additional benefits including 0% corporate tax.",
+      "Using a professional setup service saves time, avoids mistakes, and reduces stress."
+    ],
+    "ctaInArticleTitle": "Ready to register your company?",
+    "ctaInArticleDescription": "Message us on WhatsApp for a free consultation with our experts today.",
+    "ctaInArticleButton": "Get Started",
+    "relatedTitle": "Related Articles",
+    "notFound": {
+      "category": "Article",
+      "title": "Article Not Found",
+      "description": "This article could not be found.",
+      "content": "This article is coming soon. Check back later or browse our other guides."
+    },
+    "posts": {
+      "how-to-register-company-oman": {
+        "category": "Company Registration",
+        "title": "How to Register a Company in Oman: Complete Guide 2024",
+        "description": "A step-by-step guide to company registration in Oman — covering business structures, required documents, timelines, costs, and insider tips.",
+        "readTime": "12 min read",
+        "date": "December 15, 2024",
+        "content": [
+          "Setting up a company in Oman has never been more accessible for foreign investors. Since the introduction of the Foreign Capital Investment Law in 2019, international entrepreneurs can own 100% of their businesses in most sectors — without the need for a local Omani partner.",
+          "In this comprehensive guide, we'll walk you through everything you need to know about company registration in Oman — from choosing the right business structure to getting your Commercial Registration (CR) in hand."
+        ]
+      },
+      "investor-visa-guide-oman": {
+        "category": "Visa Guide",
+        "title": "Investor Visa in Oman: Complete Guide for Foreign Investors",
+        "description": "Everything you need to know about obtaining an investor visa in Oman — eligibility, documents, processing time, and renewal.",
+        "readTime": "8 min read",
+        "date": "December 10, 2024",
+        "content": [
+          "The Oman Investor Visa (RP2) is one of the most sought-after residence permits in the Gulf region — allowing foreign business owners to live and work in Oman legally. With Oman's Vision 2040 driving investment and growth, demand for investor visas has never been higher.",
+          "This guide covers everything you need to know: who qualifies, what documents you need, how long it takes, and how much it costs."
+        ]
+      },
+      "business-setup-cost-oman": {
+        "category": "Company Registration",
+        "title": "True Cost of Business Setup in Oman in 2024",
+        "description": "A transparent, complete breakdown of all costs involved in setting up a business in Oman.",
+        "readTime": "10 min read",
+        "date": "December 5, 2024",
+        "content": [
+          "One of the most common questions we get is: 'How much does it really cost to set up a business in Oman?' The honest answer: it depends — but we can give you a very good estimate.",
+          "In this article, we break down every cost involved in Oman company registration — government fees, professional service fees, visa costs, office requirements, and ongoing maintenance fees."
+        ]
+      }
+    }
+  },
+  "CookiesPage": {
+    "metaTitle": "Cookie Policy",
+    "metaDescription": "Dorbrij Cookie Policy — how we use cookies on our website.",
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: December 2024",
+    "sections": [
+      { "title": "What Are Cookies", "body": "Cookies are small text files placed on your device when you visit our website. They help us provide you with a better experience by remembering your preferences and understanding how you use our site." },
+      { "title": "How We Use Cookies", "body": "We use cookies for essential website functionality, analytics to understand site usage, and to improve your experience. We do not use cookies for advertising targeting." },
+      { "title": "Managing Cookies", "body": "You can control cookies through your browser settings. Note that disabling certain cookies may affect website functionality." }
+    ],
+    "backHome": "← Back to Home"
+  },
+  "PrivacyPage": {
+    "metaTitle": "Privacy Policy",
+    "metaDescription": "Dorbrij Privacy Policy — how we collect, use, and protect your information.",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: December 2024",
+    "sections": [
+      { "title": "1. Information We Collect", "body": "We collect information you provide directly to us, such as when you message us on WhatsApp, subscribe to our newsletter, or contact us. This may include your name, phone number, email address, nationality, and business interests." },
+      { "title": "2. How We Use Your Information", "body": "We use the information we collect to provide, maintain, and improve our services, to respond to your inquiries, to send you updates and marketing communications (where permitted), and to comply with legal obligations." },
+      { "title": "3. Information Sharing", "body": "We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except to provide the services you request or as required by law." },
+      { "title": "4. Data Security", "body": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction." },
+      { "title": "5. Contact Us", "body": "If you have questions about this Privacy Policy, please contact us at" }
+    ],
+    "contactEmail": "hello@dorbrij.om",
+    "backHome": "← Back to Home"
+  },
+  "TermsPage": {
+    "metaTitle": "Terms of Service",
+    "metaDescription": "Dorbrij Terms of Service — the rules and guidelines for using our services.",
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: December 2024",
+    "sections": [
+      { "title": "1. Acceptance of Terms", "body": "By accessing and using Dorbrij's services, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services." },
+      { "title": "2. Services", "body": "Dorbrij provides business setup consulting, company registration assistance, visa processing support, and related advisory services in Oman. Our services are provided on a professional consulting basis." },
+      { "title": "3. Professional Advice Disclaimer", "body": "While we strive to provide accurate and up-to-date information, our content is for general informational purposes only and does not constitute legal, financial, or regulatory advice. Always verify current regulations with official government sources." },
+      { "title": "4. Payment and Fees", "body": "Fees for our services are agreed upon during the consultation process and outlined in service agreements. Government fees and third-party costs are separate from and in addition to our professional fees." },
+      { "title": "5. Contact Us", "body": "Questions about these Terms? Contact us at" }
+    ],
+    "contactEmail": "hello@dorbrij.om",
+    "backHome": "← Back to Home"
+  }
+}

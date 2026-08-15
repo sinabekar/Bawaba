@@ -3,30 +3,37 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown } from "lucide-react";
-import BawabaLogo from "@/components/icons/BawabaLogo";
-
-const services = [
-  { label: "Company Registration", href: "/company-registration" },
-  { label: "Visa Services", href: "/visa-services" },
-  { label: "Why Invest in Oman", href: "/why-oman" },
-];
-
-const navLinks = [
-  { label: "Services", href: "#", dropdown: services },
-  { label: "Why Oman", href: "/why-oman" },
-  { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
-];
+import { Menu, X, ChevronDown, MessageCircle } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
+import DorbrijLogo from "@/components/icons/DorbrijLogo";
+import LanguageSwitcher from "@/components/widgets/LanguageSwitcher";
+import { localeHref, type Locale } from "@/i18n/routing";
+import { whatsappLink } from "@/lib/whatsapp";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const pathname = usePathname();
+  const locale = useLocale() as Locale;
+  const t = useTranslations("Nav");
+  const tw = useTranslations("WhatsApp");
 
-  const isHome = pathname === "/";
+  const services = [
+    { label: t("servicesItems.companyRegistration"), href: localeHref(locale, "/company-registration") },
+    { label: t("servicesItems.visaServices"), href: localeHref(locale, "/visa-services") },
+    { label: t("servicesItems.whyOman"), href: localeHref(locale, "/why-oman") },
+  ];
+
+  const navLinks = [
+    { label: t("whyOman"), href: localeHref(locale, "/why-oman") },
+    { label: t("about"), href: localeHref(locale, "/about") },
+    { label: t("blog"), href: localeHref(locale, "/blog") },
+    { label: t("contact"), href: localeHref(locale, "/contact") },
+  ];
+
+  const homeHref = localeHref(locale, "/");
+  const isHome = pathname === homeHref;
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -46,100 +53,100 @@ export default function Navbar() {
   const textColor =
     isHome && !isScrolled ? "text-white/90 hover:text-white" : "text-gray-700 hover:text-gray-900";
   const logoVariant = isHome && !isScrolled ? "light" : "dark";
+  const langSwitcherClass =
+    isHome && !isScrolled
+      ? "border-white/30 text-white/90 hover:bg-white/10"
+      : "border-gray-200 text-gray-600 hover:bg-gray-50";
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}
+      className={`fixed top-0 start-0 end-0 z-50 transition-all duration-300 ${navBg}`}
     >
       <nav className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-18">
           {/* Logo */}
-          <Link href="/" aria-label="Bawaba home">
-            <BawabaLogo variant={logoVariant} size="md" />
+          <Link href={homeHref} aria-label={t("homeAriaLabel")}>
+            <DorbrijLogo variant={logoVariant} size="md" />
           </Link>
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-1">
-            {navLinks.map((link) =>
-              link.dropdown ? (
-                <div key={link.label} className="relative group">
-                  <button
-                    className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${textColor}`}
-                    onMouseEnter={() => setServicesOpen(true)}
-                    onMouseLeave={() => setServicesOpen(false)}
-                  >
-                    {link.label}
-                    <ChevronDown className="w-3.5 h-3.5 mt-px" />
-                  </button>
-                  {/* Dropdown */}
-                  <div
-                    className={`absolute top-full left-0 pt-2 transition-all duration-200 ${
-                      servicesOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"
-                    }`}
-                    onMouseEnter={() => setServicesOpen(true)}
-                    onMouseLeave={() => setServicesOpen(false)}
-                  >
-                    <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-52">
-                      {link.dropdown.map((item) => (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
-                        >
-                          {item.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
+            {/* Services dropdown */}
+            <div className="relative group">
+              <button
+                className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${textColor}`}
+                onMouseEnter={() => setServicesOpen(true)}
+                onMouseLeave={() => setServicesOpen(false)}
+              >
+                {t("services")}
+                <ChevronDown className="w-3.5 h-3.5 mt-px" />
+              </button>
+              <div
+                className={`absolute top-full start-0 pt-2 transition-all duration-200 ${
+                  servicesOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"
+                }`}
+                onMouseEnter={() => setServicesOpen(true)}
+                onMouseLeave={() => setServicesOpen(false)}
+              >
+                <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-52">
+                  {services.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
                 </div>
-              ) : (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
-                    pathname === link.href
-                      ? isHome && !isScrolled
-                        ? "text-white"
-                        : "text-secondary"
-                      : textColor
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              )
-            )}
+              </div>
+            </div>
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  pathname === link.href
+                    ? isHome && !isScrolled
+                      ? "text-white"
+                      : "text-secondary"
+                    : textColor
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
+            <LanguageSwitcher className={langSwitcherClass} />
             <a
-              href="https://wa.me/96890000000"
+              href={whatsappLink(tw("messages.general"))}
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-sm font-medium transition-colors ${textColor}`}
+              className="flex items-center gap-2 px-4 py-2 bg-secondary text-white text-sm font-semibold rounded-lg hover:bg-secondary-700 transition-colors"
             >
-              WhatsApp
+              <MessageCircle className="w-4 h-4" />
+              {t("whatsappCta")}
             </a>
-            <Link
-              href="/contact"
-              className="px-4 py-2 bg-secondary text-white text-sm font-semibold rounded-lg hover:bg-secondary-700 transition-colors"
-            >
-              Book Free Consultation
-            </Link>
           </div>
 
           {/* Mobile menu button */}
-          <button
-            className={`md:hidden p-2 rounded-lg transition-colors ${
-              isHome && !isScrolled
-                ? "text-white hover:bg-white/10"
-                : "text-gray-700 hover:bg-gray-100"
-            }`}
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle mobile menu"
-          >
-            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <LanguageSwitcher className={langSwitcherClass} />
+            <button
+              className={`p-2 rounded-lg transition-colors ${
+                isHome && !isScrolled
+                  ? "text-white hover:bg-white/10"
+                  : "text-gray-700 hover:bg-gray-100"
+              }`}
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label={t("toggleMenu")}
+            >
+              {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -157,32 +164,25 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="border-t border-gray-100 my-2" />
-            {navLinks
-              .filter((l) => !l.dropdown)
-              .map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-lg"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            <div className="border-t border-gray-100 pt-3 mt-2 space-y-2">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-lg"
+              >
+                {link.label}
+              </Link>
+            ))}
+            <div className="border-t border-gray-100 pt-3 mt-2">
               <a
-                href="https://wa.me/96890000000"
+                href={whatsappLink(tw("messages.general"))}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full px-4 py-3 text-sm font-medium text-center text-secondary border border-secondary rounded-lg"
+                className="flex items-center justify-center gap-2 w-full px-4 py-3 text-sm font-semibold text-center text-white bg-secondary rounded-lg"
               >
-                Chat on WhatsApp
+                <MessageCircle className="w-4 h-4" />
+                {t("whatsappCta")}
               </a>
-              <Link
-                href="/contact"
-                className="block w-full px-4 py-3 text-sm font-semibold text-center text-white bg-secondary rounded-lg"
-              >
-                Book Free Consultation
-              </Link>
             </div>
           </div>
         </div>

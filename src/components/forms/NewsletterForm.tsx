@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 
 interface NewsletterFormProps {
   variant?: "dark" | "light";
@@ -10,6 +11,7 @@ interface NewsletterFormProps {
 export default function NewsletterForm({ variant = "dark", className = "" }: NewsletterFormProps) {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const t = useTranslations("NewsletterForm");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,20 +21,20 @@ export default function NewsletterForm({ variant = "dark", className = "" }: New
   if (submitted) {
     return (
       <p className={`text-sm font-medium ${variant === "dark" ? "text-white/70" : "text-secondary"}`}>
-        ✓ You&apos;re subscribed! Check your inbox.
+        ✓ {t("subscribed")}
       </p>
     );
   }
 
   return (
     <form onSubmit={handleSubmit} className={`flex gap-2 ${className}`}>
-      <label htmlFor="newsletter-email" className="sr-only">Email address</label>
+      <label htmlFor="newsletter-email" className="sr-only">{t("emailLabel")}</label>
       <input
         id="newsletter-email"
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="Enter your email"
+        placeholder={t("placeholder")}
         required
         className={`flex-1 px-4 py-2.5 rounded-lg text-sm focus:outline-none focus:ring-1 transition-colors ${
           variant === "dark"
@@ -44,7 +46,7 @@ export default function NewsletterForm({ variant = "dark", className = "" }: New
         type="submit"
         className="px-4 py-2.5 bg-accent text-primary rounded-lg text-sm font-semibold hover:bg-accent/90 transition-colors whitespace-nowrap"
       >
-        Subscribe
+        {t("subscribe")}
       </button>
     </form>
   );
