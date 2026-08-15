@@ -1,55 +1,28 @@
+"use client";
+
 import React from "react";
 import { UserCheck, Zap, Eye, HeartHandshake, Briefcase, ShieldCheck } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-const trustItems = [
-  {
-    icon: UserCheck,
-    title: "Professional Consultants",
-    description: "Licensed business experts with deep knowledge of Oman's regulatory environment.",
-  },
-  {
-    icon: Zap,
-    title: "Fast Processing",
-    description: "Average company registration completed in 5–7 business days.",
-  },
-  {
-    icon: Eye,
-    title: "Transparent Process",
-    description: "No hidden fees. Full visibility into every step of your application.",
-  },
-  {
-    icon: HeartHandshake,
-    title: "Dedicated Support",
-    description: "A personal advisor guides you from day one through launch.",
-  },
-  {
-    icon: Briefcase,
-    title: "Business Experts",
-    description: "Specialists in company formation, visas, and Oman's free zones.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "High Client Satisfaction",
-    description: "98% of clients rate us Excellent. We don't stop until you're set up.",
-  },
-];
+const icons = [UserCheck, Zap, Eye, HeartHandshake, Briefcase, ShieldCheck];
 
-const logos = [
-  "Muscat Bay", "Al Mouj", "Port Sultan Qaboos", "Knowledge Oasis Muscat", "Duqm SEZ",
-];
+const logos = ["Muscat Bay", "Al Mouj", "Port Sultan Qaboos", "Knowledge Oasis Muscat", "Duqm SEZ"];
 
 export default function TrustSection() {
+  const t = useTranslations("TrustSection");
+  const items = t.raw("items") as { title: string; description: string }[];
+
   return (
     <section className="py-20 bg-white" aria-labelledby="trust-heading">
       <div className="container-custom">
         {/* Partner logos strip */}
         <div className="text-center mb-14">
           <p className="text-sm text-gray-400 font-medium uppercase tracking-widest mb-6">
-            Trusted by clients from across the globe
+            {t("trustedBy")}
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {logos.map((name) => (
-              <span key={name} className="text-gray-300 font-bold text-sm md:text-base tracking-wide">
+              <span key={name} dir="ltr" className="text-gray-300 font-bold text-sm md:text-base tracking-wide">
                 {name}
               </span>
             ))}
@@ -61,8 +34,8 @@ export default function TrustSection() {
 
         {/* Trust cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {trustItems.map((item) => {
-            const Icon = item.icon;
+          {items.map((item, i) => {
+            const Icon = icons[i];
             return (
               <div
                 key={item.title}

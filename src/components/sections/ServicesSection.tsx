@@ -1,65 +1,16 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
-import { Building2, Stamp, Users, Heart, MessageSquare, ArrowRight, TrendingUp, BookOpen } from "lucide-react";
+import { Building2, Stamp, Users, Heart, MessageSquare, TrendingUp, MessageCircle, ArrowRight } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import SectionHeader from "@/components/ui/SectionHeader";
+import { localeHref, type Locale } from "@/i18n/routing";
+import { whatsappLink } from "@/lib/whatsapp";
 
-const services = [
-  {
-    icon: Building2,
-    title: "Company Registration",
-    description:
-      "Full-service company formation in Oman. We handle everything from business activity selection to CR issuance.",
-    href: "/company-registration",
-    badge: "Most Popular",
-    color: "secondary",
-  },
-  {
-    icon: Stamp,
-    title: "Investor Visa",
-    description:
-      "Secure your investor visa to live and operate your business in Oman without restrictions.",
-    href: "/visa-services#investor",
-    badge: null,
-    color: "accent",
-  },
-  {
-    icon: Users,
-    title: "Employment Visa",
-    description:
-      "Bring skilled professionals to your Oman business with proper employment visa processing.",
-    href: "/visa-services#employment",
-    badge: null,
-    color: "secondary",
-  },
-  {
-    icon: Heart,
-    title: "Family Visa",
-    description:
-      "Reunite your family in Oman. We process family residence visas quickly and smoothly.",
-    href: "/visa-services#family",
-    badge: null,
-    color: "accent",
-  },
-  {
-    icon: MessageSquare,
-    title: "Business Consultation",
-    description:
-      "Expert guidance on business structures, regulations, free zones, and investment opportunities in Oman.",
-    href: "/contact",
-    badge: null,
-    color: "secondary",
-  },
-  {
-    icon: TrendingUp,
-    title: "Coming Soon",
-    description:
-      "PRO services, accounting, trademark registration, bank account opening, and investment advisory — expanding soon.",
-    href: "#",
-    badge: "Coming Soon",
-    color: "muted",
-    disabled: true,
-  },
-];
+const icons = [Building2, Stamp, Users, Heart, MessageSquare, TrendingUp];
+const hrefs = ["/company-registration", "/visa-services#investor", "/visa-services#employment", "/visa-services#family", "/contact", "#"];
+const colors = ["secondary", "accent", "secondary", "accent", "secondary", "muted"] as const;
 
 const colorMap: Record<string, { bg: string; icon: string }> = {
   secondary: { bg: "bg-secondary/10", icon: "text-secondary" },
@@ -68,61 +19,61 @@ const colorMap: Record<string, { bg: string; icon: string }> = {
 };
 
 export default function ServicesSection() {
+  const t = useTranslations("ServicesSection");
+  const tw = useTranslations("WhatsApp");
+  const locale = useLocale() as Locale;
+  const services = t.raw("services") as { title: string; description: string; badge: string }[];
+
   return (
     <section className="section-padding bg-background" aria-labelledby="services-heading">
       <div className="container-custom">
         <SectionHeader
-          badge="Our Services"
-          title="Everything you need to"
-          titleHighlight=" start and grow"
-          description="From company registration to visa processing, we provide end-to-end support for every stage of your Oman business journey."
+          badge={t("badge")}
+          title={t("title")}
+          titleHighlight={t("titleHighlight")}
+          description={t("description")}
           className="mb-14"
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {services.map((service) => {
-            const Icon = service.icon;
-            const colors = colorMap[service.color];
+          {services.map((service, i) => {
+            const Icon = icons[i];
+            const colorStyle = colorMap[colors[i]];
+            const disabled = hrefs[i] === "#";
 
             return (
               <div
                 key={service.title}
                 className={`group relative p-7 rounded-2xl border border-gray-100 bg-white shadow-card transition-all duration-300 ${
-                  service.disabled
+                  disabled
                     ? "opacity-60 cursor-not-allowed"
                     : "hover:border-secondary/30 hover:shadow-card-hover hover:-translate-y-0.5"
                 }`}
               >
                 {service.badge && (
                   <div
-                    className={`absolute top-4 right-4 px-2.5 py-1 rounded-full text-xs font-semibold ${
-                      service.badge === "Most Popular"
-                        ? "bg-secondary/10 text-secondary"
-                        : "bg-gray-100 text-gray-500"
+                    className={`absolute top-4 end-4 px-2.5 py-1 rounded-full text-xs font-semibold ${
+                      i === 0 ? "bg-secondary/10 text-secondary" : "bg-gray-100 text-gray-500"
                     }`}
                   >
                     {service.badge}
                   </div>
                 )}
 
-                <div
-                  className={`w-12 h-12 ${colors.bg} rounded-xl flex items-center justify-center mb-5`}
-                >
-                  <Icon className={`w-6 h-6 ${colors.icon}`} />
+                <div className={`w-12 h-12 ${colorStyle.bg} rounded-xl flex items-center justify-center mb-5`}>
+                  <Icon className={`w-6 h-6 ${colorStyle.icon}`} />
                 </div>
 
                 <h3 className="text-lg font-bold text-primary mb-2">{service.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed mb-5">
-                  {service.description}
-                </p>
+                <p className="text-sm text-gray-600 leading-relaxed mb-5">{service.description}</p>
 
-                {!service.disabled && (
+                {!disabled && (
                   <Link
-                    href={service.href}
+                    href={localeHref(locale, hrefs[i])}
                     className="inline-flex items-center gap-1.5 text-sm font-semibold text-secondary hover:gap-2.5 transition-all duration-200"
                   >
-                    Learn More
-                    <ArrowRight className="w-4 h-4" />
+                    {t("learnMore")}
+                    <ArrowRight className="w-4 h-4 rtl:rotate-180" />
                   </Link>
                 )}
               </div>
@@ -132,16 +83,16 @@ export default function ServicesSection() {
 
         {/* Bottom CTA */}
         <div className="mt-12 text-center">
-          <p className="text-gray-500 text-sm mb-4">
-            Not sure which service you need?
-          </p>
-          <Link
-            href="/contact"
+          <p className="text-gray-500 text-sm mb-4">{t("notSure")}</p>
+          <a
+            href={whatsappLink(tw("messages.general"))}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white text-sm font-semibold rounded-xl hover:bg-primary/90 transition-colors"
           >
-            <BookOpen className="w-4 h-4" />
-            Get a Free Consultation
-          </Link>
+            <MessageCircle className="w-4 h-4" />
+            {t("cta")}
+          </a>
         </div>
       </div>
     </section>

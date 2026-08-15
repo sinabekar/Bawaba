@@ -2,11 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import { X, Download } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function ExitIntent() {
   const [show, setShow] = useState(false);
   const [dismissed, setDismissed] = useState(false);
   const [email, setEmail] = useState("");
+  const t = useTranslations("ExitIntent");
 
   useEffect(() => {
     if (dismissed) return;
@@ -47,8 +49,8 @@ export default function ExitIntent() {
 
         <button
           onClick={handleDismiss}
-          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
-          aria-label="Close"
+          className="absolute top-4 end-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+          aria-label={t("close")}
         >
           <X className="w-4 h-4 text-gray-600" />
         </button>
@@ -59,27 +61,19 @@ export default function ExitIntent() {
             <Download className="w-7 h-7 text-secondary" />
           </div>
 
-          <h3 className="text-2xl font-bold text-primary mb-2">
-            Wait — Get Your Free Guide
-          </h3>
-          <p className="text-gray-600 text-sm leading-relaxed mb-6">
-            Download our complete{" "}
-            <strong className="text-gray-900">
-              &quot;Starting a Business in Oman&quot;
-            </strong>{" "}
-            guide — covering registration, visas, costs, and everything you need to know.
-          </p>
+          <h3 className="text-2xl font-bold text-primary mb-2">{t("title")}</h3>
+          <p className="text-gray-600 text-sm leading-relaxed mb-6">{t("description")}</p>
 
           <form onSubmit={handleSubmit} className="space-y-3">
             <label htmlFor="exit-email" className="sr-only">
-              Email address
+              {t("emailLabel")}
             </label>
             <input
               id="exit-email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email address"
+              placeholder={t("placeholder")}
               className="w-full px-4 py-3 rounded-xl border border-gray-200 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-colors"
               required
             />
@@ -87,7 +81,7 @@ export default function ExitIntent() {
               type="submit"
               className="w-full py-3 bg-secondary text-white text-sm font-semibold rounded-xl hover:bg-secondary-700 transition-colors"
             >
-              Send Me the Free Guide
+              {t("submit")}
             </button>
           </form>
 
@@ -95,7 +89,7 @@ export default function ExitIntent() {
             onClick={handleDismiss}
             className="mt-4 w-full text-xs text-gray-400 hover:text-gray-600 transition-colors"
           >
-            No thanks, I don&apos;t need this
+            {t("dismiss")}
           </button>
         </div>
       </div>
