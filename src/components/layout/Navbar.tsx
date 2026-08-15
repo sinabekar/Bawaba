@@ -47,7 +47,7 @@ export default function Navbar() {
   const navBg =
     isHome && !isScrolled
       ? "bg-transparent"
-      : "bg-white/90 backdrop-blur-md border-b border-gray-100";
+      : "bg-white/85 backdrop-blur-xl border-b border-gray-100 shadow-[0_1px_0_rgba(10,15,13,0.03)]";
 
   const textColor =
     isHome && !isScrolled ? "text-white/90 hover:text-white" : "text-gray-700 hover:text-gray-900";
@@ -83,12 +83,12 @@ export default function Navbar() {
                 onMouseEnter={() => setServicesOpen(true)}
                 onMouseLeave={() => setServicesOpen(false)}
               >
-                <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-2 min-w-52">
+                <div className="bg-white rounded-2xl shadow-[0_8px_24px_-4px_rgba(10,15,13,0.12)] border border-gray-100 p-2 min-w-56">
                   {services.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
-                      className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                      className="block px-3.5 py-2.5 rounded-xl text-sm text-gray-700 hover:bg-secondary-50 hover:text-secondary-700 transition-colors"
                     >
                       {item.label}
                     </Link>
@@ -119,7 +119,7 @@ export default function Navbar() {
               href={whatsappLink(tw("messages.general"))}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-secondary text-white text-sm font-semibold rounded-lg hover:bg-secondary-700 transition-colors"
+              className="flex items-center gap-2 px-5 py-2.5 bg-secondary text-white text-sm font-semibold rounded-full shadow-[0_1px_2px_rgba(10,15,13,0.06),0_8px_20px_-6px_rgba(14,169,104,0.5)] hover:bg-secondary-700 hover:scale-[1.02] transition-all"
             >
               <MessageCircle className="w-4 h-4" />
               {t("whatsappCta")}
@@ -171,7 +171,7 @@ export default function Navbar() {
                 href={whatsappLink(tw("messages.general"))}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full px-4 py-3 text-sm font-semibold text-center text-white bg-secondary rounded-lg"
+                className="flex items-center justify-center gap-2 w-full px-4 py-3.5 text-sm font-semibold text-center text-white bg-secondary rounded-full"
               >
                 <MessageCircle className="w-4 h-4" />
                 {t("whatsappCta")}

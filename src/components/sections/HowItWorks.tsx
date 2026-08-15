@@ -77,7 +77,7 @@ export default function HowItWorks() {
             href={whatsappLink(tw("messages.general"))}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-primary text-sm font-bold rounded-xl hover:bg-accent/90 transition-all duration-200 hover:scale-[1.02]"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-secondary text-white text-sm font-bold rounded-full shadow-[0_1px_2px_rgba(10,15,13,0.1),0_12px_28px_-8px_rgba(14,169,104,0.5)] hover:bg-secondary-700 transition-all duration-200 hover:scale-[1.02]"
           >
             <MessageCircle className="w-4 h-4" />
             {t("ctaTitle")}

@@ -44,7 +44,7 @@ export default function NewsletterForm({ variant = "dark", className = "" }: New
       />
       <button
         type="submit"
-        className="px-4 py-2.5 bg-accent text-primary rounded-lg text-sm font-semibold hover:bg-accent/90 transition-colors whitespace-nowrap"
+        className="px-5 py-2.5 bg-secondary text-white rounded-full text-sm font-semibold hover:bg-secondary-700 transition-colors whitespace-nowrap"
       >
         {t("subscribe")}
       </button>

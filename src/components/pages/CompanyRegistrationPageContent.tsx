@@ -57,7 +57,7 @@ export default function CompanyRegistrationPageContent() {
                 href={whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 bg-accent text-primary text-sm font-bold rounded-xl hover:bg-accent/90 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-secondary text-white text-sm font-bold rounded-full hover:bg-secondary-700 transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
                 {t("ctaStart")}

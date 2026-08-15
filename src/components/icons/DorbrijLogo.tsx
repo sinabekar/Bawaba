@@ -8,11 +8,19 @@ interface LogoProps {
 }
 
 const sizes = {
-  sm: { icon: 28, text: 16 },
-  md: { icon: 36, text: 20 },
-  lg: { icon: 48, text: 26 },
+  sm: { icon: 30, text: 16 },
+  md: { icon: 38, text: 20 },
+  lg: { icon: 50, text: 26 },
 };
 
+/**
+ * Mark: a doorway (arch) with a bridge deck crossing through and past it —
+ * literal "door + bridge" read as a single clean glyph, in a rounded-square
+ * badge (the app-icon convention modern fintech/SaaS brands use — Mercury,
+ * Ramp, Linear). The badge itself doesn't change with the light/dark page
+ * variant; only the separate wordmark's color does, since the badge is
+ * self-contained and reads fine on any background.
+ */
 export default function DorbrijLogo({
   variant = "dark",
   showWordmark = true,
@@ -20,13 +28,10 @@ export default function DorbrijLogo({
   className = "",
 }: LogoProps) {
   const { icon } = sizes[size];
-  const textColor = variant === "light" ? "#FFFFFF" : "#0F172A";
-  const iconPrimary = variant === "light" ? "#FFFFFF" : "#0B6E4F";
-  const iconAccent = "#C89B3C";
+  const textColor = variant === "light" ? "#FFFFFF" : "#0A0F0D";
 
   return (
     <div className={`flex items-center gap-2.5 ${className}`}>
-      {/* Icon: door + bridge arch */}
       <svg
         width={icon}
         height={icon}
@@ -35,25 +40,24 @@ export default function DorbrijLogo({
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
-        {/* Arch body */}
+        <rect width="36" height="36" rx="10" fill="url(#dorbrij-badge)" />
+        {/* Doorway */}
         <path
-          d="M4 32V18C4 10.268 10.268 4 18 4C25.732 4 32 10.268 32 18V32"
-          stroke={iconPrimary}
-          strokeWidth="3"
-          strokeLinecap="round"
-          fill="none"
+          d="M12 27V17a6 6 0 0 1 12 0v10"
+          fill="#FFFFFF"
         />
-        {/* Left pillar */}
-        <rect x="4" y="22" width="5" height="10" rx="1" fill={iconPrimary} />
-        {/* Right pillar */}
-        <rect x="27" y="22" width="5" height="10" rx="1" fill={iconPrimary} />
-        {/* Base (bridge deck) */}
-        <rect x="2" y="31" width="32" height="3" rx="1.5" fill={iconAccent} />
-        {/* Keystone accent */}
-        <circle cx="18" cy="6" r="2.5" fill={iconAccent} />
+        {/* Bridge deck, crossing through and past the doorway */}
+        <rect x="6" y="19.25" width="24" height="2.6" rx="1.3" fill="#07341F" />
+        <rect x="6" y="21.85" width="2.6" height="5.15" rx="1" fill="#07341F" />
+        <rect x="27.4" y="21.85" width="2.6" height="5.15" rx="1" fill="#07341F" />
+        <defs>
+          <linearGradient id="dorbrij-badge" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stopColor="#1BD692" />
+            <stop offset="1" stopColor="#0B8654" />
+          </linearGradient>
+        </defs>
       </svg>
 
-      {/* Wordmark */}
       {showWordmark && (
         <span
           style={{
@@ -61,7 +65,7 @@ export default function DorbrijLogo({
             fontSize: sizes[size].text,
             fontWeight: 800,
             color: textColor,
-            letterSpacing: "-0.02em",
+            letterSpacing: "-0.03em",
             lineHeight: 1,
           }}
           dir="ltr"
