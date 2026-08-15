@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
-import "../../globals.css";
+import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import MobileBottomNav from "@/components/layout/MobileBottomNav";
 import WhatsAppButton from "@/components/widgets/WhatsAppButton";
 import FloatingCTA from "@/components/widgets/FloatingCTA";
 import ExitIntent from "@/components/widgets/ExitIntent";
-import messages from "../../../../messages/fa.json";
+import messages from "../../messages/fa.json";
 
 // Loaded via a plain <link> rather than next/font/google: Turbopack's
 // build-time font optimizer failed to resolve Vazirmatn in CI (module
@@ -15,8 +15,6 @@ import messages from "../../../../messages/fa.json";
 // even though it built fine locally. A <link> tag has the browser fetch the
 // font at request time instead, which sidesteps that build-time dependency
 // entirely and is a safer default for a static export built in CI anyway.
-// Reuses the same CSS variable names the (en) tree defines (--font-jakarta,
-// --font-inter) so globals.css needs no locale-specific branching.
 
 export const metadata: Metadata = {
   title: {
@@ -50,7 +48,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function FarsiRootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
