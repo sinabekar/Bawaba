@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getPageTranslator } from "@/i18n/getPageTranslator";
 import BlogPostPageContent from "@/components/pages/BlogPostPageContent";
-import faMessages from "../../../../../../messages/fa.json";
+import faMessages from "../../../../messages/fa.json";
 
 export function generateStaticParams() {
   return Object.keys(faMessages.BlogPostPage.posts).map((slug) => ({ slug }));

@@ -1,25 +1,14 @@
-// This is a static export (see next.config.ts) served from GitHub Pages —
-// there is no middleware/runtime available to negotiate a locale for an
-// unprefixed URL. Instead of next-intl's middleware-based locale routing,
-// each locale gets its own literal route tree:
-//   src/app/(en)/...      -> unprefixed URLs (e.g. /about) — unchanged from before
-//   src/app/(fa)/fa/...   -> /fa-prefixed URLs (e.g. /fa/about)
-// Both are separate Next.js "root layouts" (see the route-groups docs) so each
-// can set its own <html lang dir>. Translation strings are still served by
-// next-intl (NextIntlClientProvider client-side, getTranslations server-side)
-// with the locale passed explicitly rather than auto-detected.
+// This site is Farsi-only (no locale switching). `routing.ts` used to
+// coordinate two locale trees (English + Farsi) via next-intl; that's gone
+// now, but `localeHref` is kept as a passthrough so components that call it
+// (Navbar, Footer, page content, etc.) didn't need every call site rewritten
+// — it simply returns the path unchanged.
 
-export const locales = ["en", "fa"] as const;
+export const locales = ["fa"] as const;
 export type Locale = (typeof locales)[number];
-export const defaultLocale: Locale = "en";
+export const defaultLocale: Locale = "fa";
 
-export const localeNames: Record<Locale, string> = {
-  en: "English",
-  fa: "فارسی",
-};
-
-/** Builds a path prefixed for the given locale ("" for en, "/fa" for fa). */
-export function localeHref(locale: Locale, path: string): string {
-  const clean = path === "/" ? "" : path;
-  return locale === defaultLocale ? path : `/fa${clean}`;
+/** No-op: kept so existing call sites (`localeHref(locale, "/x")`) don't need touching. */
+export function localeHref(_locale: Locale, path: string): string {
+  return path;
 }

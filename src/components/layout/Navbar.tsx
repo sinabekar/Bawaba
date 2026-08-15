@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, MessageCircle } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import DorbrijLogo from "@/components/icons/DorbrijLogo";
-import LanguageSwitcher from "@/components/widgets/LanguageSwitcher";
 import { localeHref, type Locale } from "@/i18n/routing";
 import { whatsappLink } from "@/lib/whatsapp";
 
@@ -53,10 +52,6 @@ export default function Navbar() {
   const textColor =
     isHome && !isScrolled ? "text-white/90 hover:text-white" : "text-gray-700 hover:text-gray-900";
   const logoVariant = isHome && !isScrolled ? "light" : "dark";
-  const langSwitcherClass =
-    isHome && !isScrolled
-      ? "border-white/30 text-white/90 hover:bg-white/10"
-      : "border-gray-200 text-gray-600 hover:bg-gray-50";
 
   return (
     <header
@@ -120,7 +115,6 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <LanguageSwitcher className={langSwitcherClass} />
             <a
               href={whatsappLink(tw("messages.general"))}
               target="_blank"
@@ -134,7 +128,6 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <div className="flex items-center gap-2 md:hidden">
-            <LanguageSwitcher className={langSwitcherClass} />
             <button
               className={`p-2 rounded-lg transition-colors ${
                 isHome && !isScrolled
