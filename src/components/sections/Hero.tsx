@@ -38,8 +38,8 @@ export default function Hero() {
         }}
       />
       {/* Glow blobs */}
-      <div className="absolute top-1/4 end-0 w-96 h-96 bg-secondary/30 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 start-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/4 end-0 w-[32rem] h-[32rem] glow-emerald rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 start-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative container-custom pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -53,13 +53,13 @@ export default function Hero() {
 
             {/* Headline */}
             <div className="space-y-2">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-[4.5rem] font-bold text-white leading-[1.05] tracking-tight">
                 {t("headlineLine1")}
                 <br />
                 {t("headlineLine2")}{" "}
                 <span className="text-gradient-accent">{t("headlineHighlight")}</span>
               </h1>
-              <p className="text-base md:text-lg text-white/70 leading-relaxed max-w-lg mt-6">
+              <p className="text-base md:text-lg text-white/60 leading-relaxed max-w-lg mt-6">
                 {t("subtitle")}
               </p>
             </div>
@@ -80,14 +80,14 @@ export default function Hero() {
                 href={whatsappLink(tw("messages.general"))}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-accent text-primary text-sm font-bold rounded-xl hover:bg-accent/90 transition-all duration-200 hover:scale-[1.02]"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-secondary text-white text-sm font-bold rounded-full shadow-[0_1px_2px_rgba(10,15,13,0.1),0_12px_28px_-8px_rgba(14,169,104,0.55)] hover:bg-secondary-700 transition-all duration-200 hover:scale-[1.02]"
               >
                 <MessageCircle className="w-4 h-4" />
                 {t("ctaWhatsapp")}
               </a>
               <Link
                 href={localeHref(locale, "/contact")}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/10 text-white text-sm font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-200"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white/[0.06] text-white text-sm font-semibold rounded-full border border-white/15 hover:bg-white/10 hover:border-white/25 transition-all duration-200"
               >
                 {t("ctaContact")}
               </Link>

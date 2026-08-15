@@ -1,40 +1,48 @@
 @import "tailwindcss";
 
+/*
+  Design system — refreshed to match the modern fintech/legal-tech register
+  (Stripe Atlas, Mercury, Ramp, Linear): a near-black ink surface, a single
+  saturated emerald accent doing all the work color used to be spread across
+  green+gold for, warm-neutral off-white backgrounds instead of stark white,
+  and a larger radius scale for a softer, more "app" feel than the old
+  corporate-brochure look.
+*/
 @theme {
-  --color-primary: #0F172A;
-  --color-secondary: #0B6E4F;
-  --color-accent: #C89B3C;
-  --color-background: #F8FAFC;
+  --color-primary: #0A0F0D;
+  --color-secondary: #0EA968;
+  --color-accent: #E8B84B;
+  --color-background: #F7F8F6;
   --color-surface: #FFFFFF;
-  --color-text: #111827;
-  --color-text-muted: #6B7280;
-  --color-border: #E5E7EB;
+  --color-text: #0A0F0D;
+  --color-text-muted: #5B6B64;
+  --color-border: #E4E8E5;
   --color-success: #16A34A;
 
-  --color-primary-50: #F0F4FF;
-  --color-primary-100: #E0E9FF;
-  --color-primary-900: #0F172A;
+  --color-primary-50: #F2F5F4;
+  --color-primary-100: #E3E9E6;
+  --color-primary-900: #0A0F0D;
 
-  --color-secondary-50: #ECFDF5;
-  --color-secondary-100: #D1FAE5;
-  --color-secondary-600: #0B6E4F;
-  --color-secondary-700: #065F46;
+  --color-secondary-50: #EAFBF3;
+  --color-secondary-100: #CFF5E2;
+  --color-secondary-600: #0EA968;
+  --color-secondary-700: #0B8654;
 
-  --color-accent-50: #FEFCE8;
-  --color-accent-100: #FEF9C3;
-  --color-accent-500: #C89B3C;
-  --color-accent-600: #B45309;
+  --color-accent-50: #FDF8EC;
+  --color-accent-100: #FAEDC9;
+  --color-accent-500: #E8B84B;
+  --color-accent-600: #C99A2E;
 
   --font-heading: var(--font-jakarta);
   --font-body: var(--font-inter);
   --font-sans: var(--font-inter);
 
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
-  --radius-2xl: 1.5rem;
-  --radius-3xl: 2rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.75rem;
+  --radius-3xl: 2.25rem;
 }
 
 * {
@@ -46,8 +54,8 @@ html {
 }
 
 body {
-  background-color: #F8FAFC;
-  color: #111827;
+  background-color: #F7F8F6;
+  color: #0A0F0D;
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -56,6 +64,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
   font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 @keyframes fade-up {
@@ -91,8 +100,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes pulse-ring {
-  0% { transform: scale(1); opacity: 0.8; }
-  100% { transform: scale(1.4); opacity: 0; }
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(1.5); opacity: 0; }
 }
 
 .animate-fade-up {
@@ -112,41 +121,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .gradient-primary {
-  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  background: linear-gradient(180deg, #0A0F0D 0%, #101713 100%);
 }
 
 .gradient-secondary {
-  background: linear-gradient(135deg, #0B6E4F 0%, #065F46 100%);
+  background: linear-gradient(135deg, #0EA968 0%, #0B8654 100%);
 }
 
 .gradient-accent {
-  background: linear-gradient(135deg, #C89B3C 0%, #B45309 100%);
+  background: linear-gradient(135deg, #E8B84B 0%, #C99A2E 100%);
 }
 
+/* Solid ink instead of the old diagonal green→navy gradient — reads more
+   like a premium dark app surface (Linear/Mercury) than a brochure banner.
+   The radial glow that used to differentiate hero sections now comes from
+   .glow-emerald placed as a separate absolutely-positioned element. */
 .gradient-hero {
-  background: linear-gradient(135deg, #0F172A 0%, #0B6E4F 100%);
+  background: #0A0F0D;
 }
 
 .text-gradient-accent {
-  background: linear-gradient(135deg, #C89B3C, #F59E0B);
+  background: linear-gradient(135deg, #22D188, #0EA968);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .shadow-card {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 2px rgba(10, 15, 13, 0.04), 0 2px 8px rgba(10, 15, 13, 0.05);
 }
 
 .shadow-card-hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 12px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(10, 15, 13, 0.06), 0 16px 40px rgba(10, 15, 13, 0.1);
 }
 
 .section-padding {
@@ -197,6 +210,11 @@ h1, h2, h3, h4, h5, h6 {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Soft radial glow used behind dark sections instead of a busy gradient */
+.glow-emerald {
+  background: radial-gradient(circle, rgba(14, 169, 104, 0.35) 0%, rgba(14, 169, 104, 0) 70%);
 }
 
 /* Bottom mobile nav */

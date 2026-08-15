@@ -41,7 +41,7 @@ export default function CTASection({ title, subtitle, variant = "dark" }: CTASec
         }}
       />
       <div className="absolute top-0 end-0 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 start-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 start-0 w-80 h-80 bg-secondary/15 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative container-custom">
         <div className="max-w-2xl mx-auto text-center space-y-8">
@@ -59,7 +59,7 @@ export default function CTASection({ title, subtitle, variant = "dark" }: CTASec
               href={whatsappLink(tw("messages.general"))}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-primary text-sm font-bold rounded-xl hover:bg-accent/90 transition-all duration-200 hover:scale-[1.02]"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary text-white text-sm font-bold rounded-full shadow-[0_1px_2px_rgba(10,15,13,0.1),0_12px_28px_-8px_rgba(14,169,104,0.5)] hover:bg-secondary-700 transition-all duration-200 hover:scale-[1.02]"
             >
               <MessageCircle className="w-4 h-4" />
               {t("whatsapp")}
@@ -67,7 +67,7 @@ export default function CTASection({ title, subtitle, variant = "dark" }: CTASec
             </a>
             <Link
               href={localeHref(locale, "/contact")}
-              className={`inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-semibold rounded-xl border transition-all duration-200 ${
+              className={`inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-semibold rounded-full border transition-all duration-200 ${
                 variant === "light"
                   ? "bg-white text-gray-800 border-gray-200 hover:bg-gray-50"
                   : "bg-white/10 text-white border-white/20 hover:bg-white/20"

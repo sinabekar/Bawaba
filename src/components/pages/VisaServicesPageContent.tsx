@@ -56,7 +56,7 @@ export default function VisaServicesPageContent() {
             </h1>
             <p className="text-white/70 text-lg leading-relaxed mb-8">{t("heroDescription")}</p>
             <div className="flex flex-wrap gap-4">
-              <a href="#visas" className="inline-flex items-center gap-2 px-6 py-3.5 bg-accent text-primary text-sm font-bold rounded-xl hover:bg-accent/90 transition-all">
+              <a href="#visas" className="inline-flex items-center gap-2 px-6 py-3.5 bg-secondary text-white text-sm font-bold rounded-full hover:bg-secondary-700 transition-all">
                 {t("ctaExplore")} <ArrowRight className="w-4 h-4 rtl:rotate-180" />
               </a>
               <a href={generalWhatsapp} target="_blank" rel="noopener noreferrer"
