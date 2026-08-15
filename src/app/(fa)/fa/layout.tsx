@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Vazirmatn } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import "../../globals.css";
 import Navbar from "@/components/layout/Navbar";
@@ -10,22 +9,14 @@ import FloatingCTA from "@/components/widgets/FloatingCTA";
 import ExitIntent from "@/components/widgets/ExitIntent";
 import messages from "../../../../messages/fa.json";
 
-// Reuse the same CSS variable names the (en) tree defines (--font-jakarta,
-// --font-inter) so globals.css needs no locale-specific branching — this
-// tree just points them at Vazirmatn instead of the Latin fonts.
-const vazirmatnHeading = Vazirmatn({
-  subsets: ["arabic"],
-  variable: "--font-jakarta",
-  weight: ["600", "700", "800"],
-  display: "swap",
-});
-
-const vazirmatnBody = Vazirmatn({
-  subsets: ["arabic"],
-  variable: "--font-inter",
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
+// Loaded via a plain <link> rather than next/font/google: Turbopack's
+// build-time font optimizer failed to resolve Vazirmatn in CI (module
+// resolution error for '@vercel/turbopack-next/internal/font/google/font'),
+// even though it built fine locally. A <link> tag has the browser fetch the
+// font at request time instead, which sidesteps that build-time dependency
+// entirely and is a safer default for a static export built in CI anyway.
+// Reuses the same CSS variable names the (en) tree defines (--font-jakarta,
+// --font-inter) so globals.css needs no locale-specific branching.
 
 export const metadata: Metadata = {
   title: {
@@ -68,8 +59,17 @@ export default function FarsiRootLayout({
     <html
       lang="fa"
       dir="rtl"
-      className={`${vazirmatnHeading.variable} ${vazirmatnBody.variable} h-full antialiased`}
+      className="h-full antialiased"
+      style={{ "--font-jakarta": "'Vazirmatn', sans-serif", "--font-inter": "'Vazirmatn', sans-serif" } as React.CSSProperties}
     >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-background">
         <NextIntlClientProvider locale="fa" messages={messages}>
           <Navbar />
